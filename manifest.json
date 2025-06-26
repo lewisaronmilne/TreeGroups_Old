@@ -1,0 +1,52 @@
+{
+	"manifest_version": 2,
+	"name": "Tree Groups",
+	"version": "0.5",
+
+	"description": "Tree Groups",
+
+	"applications": 
+	{
+		"gecko": 
+		{
+			"id": "TreeGroups@LewisAronMilne"
+		}
+	},
+
+	"icons":
+	{
+		"48": "tgicon.png"
+	},
+
+	"options_ui": 
+	{
+		"page": "options.html",
+		"open_in_tab": true
+	},
+
+	"browser_action": 
+	{
+		"default_icon": 
+		{
+			"48": "tgicon.png"
+		}
+	},
+
+	"sidebar_action": 
+	{
+		"default_title": "Tree Groups",
+		"default_panel": "sidebar.html",
+		"default_icon": "tgicon.png"
+	},
+
+	"permissions": 
+	[
+		"tabs", 
+		"storage"
+	],
+
+	"background": 
+	{
+		"scripts": ["background.js"]
+	}
+}
